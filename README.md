@@ -8,7 +8,7 @@ This is a light and portable thermometer that uses M5Stack (ESP32) as its core. 
 
 ### Data methods
 
-![image-20200513101227109](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/8.jpg)
+![image-20200513101227109](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/8.png)
 
 
 
@@ -123,7 +123,7 @@ Shows all of the data and can be updated almost instantly! The long decimal plac
 
 It subscribes to the broker and the data topic. Then it logs the topic down once it is published.
 
-![image-20200513095221975](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/9.jpg)
+![image-20200513095221975](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/10.png)
 
 ### SMS notification
 
