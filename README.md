@@ -4,6 +4,14 @@ M5Stack/ESP32 Infrared Thermometer with Blynk/MQTT/GSM Support
 
 This is a light and portable thermometer that uses M5Stack (ESP32) as its core. An Single and Dual Zone Infra Red Thermometer MLX90614 provides fast and accurate temperature measurements. The M5Stack GPS unit and ENV unit are utilized to provide position data and environment readings that together with the  temperature readings, will help fight the COVID-19 outbreak. A SIM800L module is used to send SMS messages that contain the readings.
 
+![IMG_20200513_055545](D:\Projects\M5Stack\IMG_20200513_055545.jpg)
+
+### Data methods
+
+![image-20200513101227109](C:\Users\Tanatonium\AppData\Roaming\Typora\typora-user-images\image-20200513101227109.png)
+
+
+
 ## Overview
 
 This project is written using Arduino. There are a couple of libraries that need to be installed before you proceed. The specifics are written below. Be sure to have them installed or the example will not execute correctly.
@@ -73,4 +81,52 @@ MLX90614 and the Env. Unit should both be connected to Port A, and for the GPS, 
 
 After burning, press the middle button to start a measurement. The left button is for shutting down the Lcd screen to save power. The right button is for sending out an SMS.
 
- 
+----------------------
+
+## On the build
+
+### The front
+
+A big blue figure shows the measured temperature in Celsius. A time stamp shows when the measurement was taken. Environment temperature, humidity and pressure is also shown. I was indoors and couldn't get GPS signals, thus the timeout warning.
+
+![IMG_20200513_055457](D:\Projects\M5Stack\IMG_20200513_055457.jpg)
+
+### The main component
+
+The MLX90614 Infrared sensor pocking out at the front of the thermometer. It is the heart of this project. It can measure from -70℃ to 380℃ without even needing to touch the object! For human body temperature range, it can achieve a reasonable accuracy.
+
+The rectangular thing on the top left corner is the antenna of the GPS.
+
+![IMG_20200513_055522](D:\Projects\M5Stack\IMG_20200513_055522.jpg)
+
+### The sides
+
+We can see the GPS module here. My M5Stack GPS unit had a "antenna open" error, so I had to buy another of the same kind. It worked well. To get the strongest signals, you had to be outdoors.
+
+The blue GSM module can also be seen here.
+
+![IMG_20200513_055511](D:\Projects\M5Stack\IMG_20200513_055511.jpg)
+
+### The bottom
+
+Underneath, a single ENV unit sticks at the bottom. It obtains temperature, humidity and pressure readings of the environment and sends it to the core using I2C.
+
+![IMG_20200513_055516](D:\Projects\M5Stack\IMG_20200513_055516.jpg)
+
+ ### Blynk app
+
+Shows all of the data and can be updated almost instantly! The long decimal place is due to calculation precision problems and can be ignored. The position locations are not shown here due to privacy reasons.
+
+![image-20200513094841350](C:\Users\Tanatonium\AppData\Roaming\Typora\typora-user-images\image-20200513094841350.png)
+
+### MQTT logger
+
+It subscribes to the broker and the data topic. Then it logs the topic down once it is published.
+
+![image-20200513095221975](C:\Users\Tanatonium\AppData\Roaming\Typora\typora-user-images\image-20200513095221975.png)
+
+### SMS notification
+
+The readings can be sent via SMS to the owner.
+
+![image-20200513095350047](C:\Users\Tanatonium\AppData\Roaming\Typora\typora-user-images\image-20200513095350047.png)
