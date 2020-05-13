@@ -1,5 +1,6 @@
 # M5Stack_Infrared_Thermometer
 M5Stack/ESP32 Infrared Thermometer with Blynk/MQTT/GSM Support
+
 [A participant in the First Internet of Things Competition of Southeast University, author: YZY]
 
 This is a light and portable thermometer that uses M5Stack (ESP32) as its core. An Single and Dual Zone Infra Red Thermometer MLX90614 provides fast and accurate temperature measurements. The M5Stack GPS unit and ENV unit are utilized to provide position data and environment readings that together with the  temperature readings, will help fight the COVID-19 outbreak. A SIM800L module is used to send SMS messages that contain the readings.
