@@ -5,13 +5,10 @@ M5Stack/ESP32 Infrared Thermometer with Blynk/MQTT/GSM Support
 
 This is a light and portable thermometer that uses M5Stack (ESP32) as its core. An Single and Dual Zone Infra Red Thermometer MLX90614 provides fast and accurate temperature measurements. The M5Stack GPS unit and ENV unit are utilized to provide position data and environment readings that together with the  temperature readings, will help fight the COVID-19 outbreak. A SIM800L module is used to send SMS messages that contain the readings.
 
-![IMG_20200513_055545](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/1.jpg)
-
-### Data methods
-
-![image-20200513101227109](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/8.png)
-
-
+## Objectives
+- Build a thermometer that is capable of fast and accurate measurements without having to touch the candidate.
+- Able to upload data to the Internet and/or other methods of transferring data
+- Able to log information that can be valuable to pandemic prevention, such as position data where it can be used to track patients.
 
 ## Overview
 
@@ -85,6 +82,12 @@ After burning, press the middle button to start a measurement. The left button i
 ----------------------
 
 ## On the build
+![IMG_20200513_055545](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/1.jpg)
+
+### Data methods
+
+![image-20200513101227109](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/8.png)
+
 
 ### The front
 
