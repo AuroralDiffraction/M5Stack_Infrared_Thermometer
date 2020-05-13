@@ -82,7 +82,8 @@ After burning, press the middle button to start a measurement. The left button i
 ----------------------
 
 ## On the build
-![IMG_20200513_055545](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/1.jpg)
+
+![IMG_20200513_055545](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/5.jpg)
 
 ### Data methods
 
@@ -93,7 +94,7 @@ After burning, press the middle button to start a measurement. The left button i
 
 A big blue figure shows the measured temperature in Celsius. A time stamp shows when the measurement was taken. Environment temperature, humidity and pressure is also shown. I was indoors and couldn't get GPS signals, thus the timeout warning.
 
-![IMG_20200513_055457](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/2.jpg)
+![IMG_20200513_055545](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/1.jpg)
 
 ### The main component
 
@@ -101,7 +102,7 @@ The MLX90614 Infrared sensor pocking out at the front of the thermometer. It is 
 
 The rectangular thing on the top left corner is the antenna of the GPS.
 
-![IMG_20200513_055522](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/3.jpg)
+![IMG_20200513_055522](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/4.jpg)
 
 ### The sides
 
@@ -109,13 +110,13 @@ We can see the GPS module here. My M5Stack GPS unit had a "antenna open" error, 
 
 The blue GSM module can also be seen here.
 
-![IMG_20200513_055511](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/4.jpg)
+![IMG_20200513_055511](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/2.jpg)
 
 ### The bottom
 
 Underneath, a single ENV unit sticks at the bottom. It obtains temperature, humidity and pressure readings of the environment and sends it to the core using I2C.
 
-![IMG_20200513_055516](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/5.jpg)
+![IMG_20200513_055516](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/3.jpg)
 
  ### Blynk app
 
