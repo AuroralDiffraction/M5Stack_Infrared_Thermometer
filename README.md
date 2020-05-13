@@ -69,8 +69,8 @@ Last of all the data can be logged into an SD card. We will use the TF card libr
 
 The Arduino sketch provided in src folder can be directly burned into the M5tack hardware. 
 
-MLX90614 and the Env. Unit should both be connected to Port A, and for the GPS, I remmapped its pins to the ones in Port B so that it will not conflict with the GSM module.
+MLX90614 and the Env. Unit should both be connected to Port A, and for the GPS, I remapped its pins to the ones in Port B so that it will not conflict with the GSM module.
 
-After burning, press the middle button to start a measurement. The left button is for closing the Lcd screen to save power. The right button is for sending out an SMS.
+After burning, press the middle button to start a measurement. The left button is for shutting down the Lcd screen to save power. The right button is for sending out an SMS.
 
  
