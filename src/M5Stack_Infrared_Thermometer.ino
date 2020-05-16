@@ -27,18 +27,18 @@ CStringBuilder sb(buff, sizeof(buff)); // String builder setup for
 char buff2[150];
 CStringBuilder sb2(buff2, sizeof(buff2)); // String builder setup
 
-char auth[] = "YY3m2kWEB1HPaX6ZxDa_hb3EZmShxCoJ"; // Blynk auth token
-char ssid[] = "gogo"; // Wifi ssid
-char pass[] = "Ibg372s1"; // Wifi password
+char auth[] = "BLYNK-AUTH-TOKEN"; // Blynk auth token
+char ssid[] = "WIFI-SSID"; // Wifi ssid
+char pass[] = "WIFI-PASSWORD"; // Wifi password
 
 // MQTT client details
 EspMQTTClient client(
-  "gogo",
-  "Ibg372s1",
-  "108.61.220.118",  // MQTT Broker server ip
-  "admin",   // Can be omitted if not needed
-  "public",   // Can be omitted if not needed
-  "Temperature121121",      // Client name that uniquely identify your device
+  "WIFI-SSID",
+  "WIFI-PASSWORD",
+  "MQTT-BROKER-IP",  // MQTT Broker server ip
+  "USERNAME",   // Can be omitted if not needed
+  "PASSWORD",   // Can be omitted if not needed
+  "DEVICE-ID",      // Client name that uniquely identify your device
   1883
 );
 
@@ -122,7 +122,7 @@ void sendSMS(){
   delay(100);
   Serial2.println("AT+CSCS=\"GSM\"");
   delay(100);
-  Serial2.println("AT+CMGS=\"19850822606\"");
+  Serial2.println("AT+CMGS=\"151********\"");
   delay(100);
   Serial2.println(buff);
   delay(100);
@@ -186,7 +186,7 @@ void setup() {
     // Debug console    
     Serial.begin(115200);
     //Blynk start
-    Blynk.begin(auth, ssid, pass, "108.61.220.118",8080);
+    Blynk.begin(auth, ssid, pass, "BLYNK-SERVER-IP",8080);
     // M5 start
     M5.begin();
     // I2C start
