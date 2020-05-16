@@ -83,18 +83,18 @@ After burning, press the middle button to start a measurement. The left button i
 
 ## On the build
 
-![5](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\5.jpg)
+![5](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/5.jpg)
 
 ### Data methods
 
-![8](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\8.png)
+![8](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/8.png)
 
 
 ### The front
 
 A big blue figure shows the measured temperature in Celsius. A time stamp shows when the measurement was taken. Environment temperature, humidity and pressure is also shown. I was indoors and couldn't get GPS signals, thus the timeout warning.
 
-![1](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\1.jpg)
+![1](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/1.jpg)
 
 ### The main component
 
@@ -102,7 +102,7 @@ The MLX90614 Infrared sensor pocking out at the front of the thermometer. It is 
 
 The rectangular thing on the top left corner is the antenna of the GPS.
 
-![4](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\4.jpg)
+![4](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/4.jpg)
 
 ### The sides
 
@@ -110,28 +110,28 @@ We can see the GPS module here. My M5Stack GPS unit had a "antenna open" error, 
 
 The blue GSM module can also be seen here.
 
-![2](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\2.jpg)
+![2](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/2.jpg)
 
 ### The bottom
 
 Underneath, a single ENV unit sticks at the bottom. It obtains temperature, humidity and pressure readings of the environment and sends it to the core using I2C.
 
-![3](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\3.jpg)
+![3](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/3.jpg)
 
  ### Blynk app
 
 Shows all of the data and can be updated almost instantly! The long decimal place is due to calculation precision problems and can be ignored. The position locations are not shown here due to privacy reasons.
 
-![6](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\6.jpg)
+![6](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/6.jpg)
 
 ### MQTT logger
 
 It subscribes to the broker and the data topic. Then it logs the topic down once it is published.
 
-![10](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\10.png)
+![10](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/10.png)
 
 ### SMS notification
 
 The readings can be sent via SMS to the owner.
 
-![7](D:\Projects\M5Stack\ppt\提交\M5Stack_Infrared_Thermometer-master\images\7.jpg)
+![7](https://github.com/AuroralDiffraction/M5Stack_Infrared_Thermometer/blob/master/images/7.jpg)
